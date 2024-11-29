@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+
+set -eu
+
+android_pkgs=(
+    'org.android.vending'
+)
+google_pkgs=(
+    'com.android.dreams.basic'
+    'com.android.vending'
+    'com.google.android.backdrop'
+    'com.google.android.gms'
+    'com.google.android.gsf'
+    'com.google.android.katniss'
+    'com.google.android.marvin.talkback'
+    'com.google.android.play.games'
+    'com.google.android.tvrecommendations'
+    'com.google.android.videos'
+    'com.google.android.youtube.tv'
+    'com.google.android.youtube.tvmusic'
+)
+mediatek_pkgs=(
+)
+partner_pkgs=(
+    'com.amazon.amazonvideo.livingroom'
+    'com.netflix.ninja'
+)
+samsung_pkgs=(
+)
+tcl_pkgs=(
+)
+xiaomi_pkgs=(
+    'android.autoinstalls.config.xiaomi.amelie'
+    'com.mitv.dream'
+    'com.mitv.gallery'
+    'com.mitv.livetv'
+    'com.mitv.livetv.ci_mediatek'
+    'com.mitv.milinkservice'
+    'com.mitv.overseaservice'
+    'com.mitv.toolhouse'
+    'com.mitv.tvhome.atv'
+    'com.mitv.tvhome.michannel'
+    'com.mitv.tvhome.mitvplus'
+    'com.mitv.updater'
+    'com.mitv.videoplayer'
+    'com.xiaomi.android.tvsetup.partnercustomizer'
+    'com.xiaomi.floatingframe'
+    'com.xiaomi.mimusic2'
+    'com.xiaomi.mitv.mediaexplorer'
+    'com.xiaomi.mitv.smartshare'
+    'com.xiaomi.mitv.tvmanager'
+    'com.xiaomi.mitv.updateservice'
+    'com.xiaomi.statistic'
+    'com.xiaomi.wfdsinkhelperservice'
+    'mitv.service'
+)
+
+pkgs_to_disable=(
+    "${android_pkgs[@]}"
+    "${google_pkgs[@]}"
+    #"${mediatek_pkgs[@]}"
+    "${partner_pkgs[@]}"
+    #"${samsung_pkgs[@]}"
+    #"${tcl_pkgs[@]}"
+    "${xiaomi_pkgs[@]}"
+)
